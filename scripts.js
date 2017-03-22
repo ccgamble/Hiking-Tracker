@@ -1,5 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZ2FtYmxlY2MiLCJhIjoiY2ltcnYwb3pzMDE3M3Y3a2sxY3MyZmdhNCJ9.jhiY7nr5PpZ3SosSf16bIA';
-var map = L.mapbox.map('map', 'mapbox.outdoors');
+var map = L.mapbox.map('map', 'mapbox.light');
 
 var myLayer = L.mapbox.featureLayer().addTo(map);
 
