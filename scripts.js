@@ -1,6 +1,11 @@
-L.mapbox.accessToken = 'pk.eyJ1IjoiZ2FtYmxlY2MiLCJhIjoiY2owbDgwZmxuMDJwNTMzcGtsbXUyOHNkcSJ9.11Kjh-0160rgp8aAAXnyVA';
-var geojson = [
-  {
+L.mapbox.accessToken = 'pk.eyJ1IjoiZ2FtYmxlY2MiLCJhIjoiY2ltcnYwb3pzMDE3M3Y3a2sxY3MyZmdhNCJ9.jhiY7nr5PpZ3SosSf16bIA';
+var map = L.mapbox.map('map', 'mapbox.light');
+
+var myLayer = L.mapbox.featureLayer().addTo(map);
+
+var geoJson = {
+  type: 'FeatureCollection',
+  features: [{
     type: 'Feature',
     geometry: {
       type: 'Point',
@@ -10,6 +15,7 @@ var geojson = [
       title: 'Grand Lake',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Grand_Lake.jpg']]
     }
   },
   {
@@ -22,6 +28,7 @@ var geojson = [
       title: 'Horseshoe Trail, Golden Gate Canyon State Park',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Golden_Gate.jpg']]
     }
   },
   {
@@ -34,6 +41,7 @@ var geojson = [
       title: 'Walker Ranch',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Walker_Ranch.jpg']]
     }
   },
   {
@@ -46,6 +54,7 @@ var geojson = [
       title: 'Rattlesnake Gulch Trail, Eldorado Canyon State Park',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Rattlesnake_Gulch.jpg']]
     }
   },
   {
@@ -58,6 +67,7 @@ var geojson = [
       title: 'Maxwell Falls',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Maxwell_Falls.jpg']]
     }
   },
   {
@@ -70,6 +80,7 @@ var geojson = [
       title: 'Mills Lake, RMNP',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Mills_Lake_RMNP.jpg']]
     }
   },
   {
@@ -82,6 +93,7 @@ var geojson = [
       title: "O'Fallon Park",
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/OFallon_Park.jpg']]
     }
   },
   {
@@ -94,6 +106,7 @@ var geojson = [
       title: 'Mount Bierstadt',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Bierstadt.jpg']]
     }
   },
   {
@@ -106,6 +119,7 @@ var geojson = [
       title: 'Mount Galbraith',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Mount_Galbraith.jpg']]
     }
   },
   {
@@ -118,6 +132,7 @@ var geojson = [
       title: 'Echo Lake',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Echo_Lake.jpg']]
     }
   },
   {
@@ -130,6 +145,7 @@ var geojson = [
       title: 'Steamboat Springs',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Steamboat.jpg']]
     }
   },
   {
@@ -142,6 +158,7 @@ var geojson = [
       title: "Saint Mary's Glacier",
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/St_Marys.jpg']]
     }
   },
   {
@@ -154,6 +171,7 @@ var geojson = [
       title: 'Lost Gulch Lookout, Flagstaff Mountain',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Lost_Gulch.jpg']]
     }
   },
   {
@@ -166,6 +184,7 @@ var geojson = [
       title: 'Elk Meadow Park',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Elk_Meadow.jpg']]
     }
   },
   {
@@ -178,6 +197,7 @@ var geojson = [
       title: 'Bear Lake, RMNP',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/RMNP2.jpg']]
     }
   },
   {
@@ -190,6 +210,7 @@ var geojson = [
       title: 'Palmer Lake',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Palmer_Lake.jpg']]
     }
   },
   {
@@ -202,6 +223,7 @@ var geojson = [
       title: 'Alderfer/Three Sisters Park',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Three_Sisters.jpg']]
     }
   },
   {
@@ -214,6 +236,7 @@ var geojson = [
       title: "Devil's Head Lookout",
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Devils_Head.jpg']]
     }
   },
   {
@@ -226,6 +249,7 @@ var geojson = [
       title: 'Meyer Ranch Open Space, Conifer',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Conifer.jpg']]
     }
   },
   {
@@ -238,6 +262,7 @@ var geojson = [
       title: 'Colorado National Monument',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/CNM.jpg']]
     }
   },
   {
@@ -250,6 +275,7 @@ var geojson = [
       title: 'Evergreen',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Evergreen.jpg']]
     }
   },
   {
@@ -262,6 +288,7 @@ var geojson = [
       title: 'White Ranch Open Space',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/white_ranch.jpg']]
     }
   },
   {
@@ -274,6 +301,7 @@ var geojson = [
       title: 'Hanging Lake',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Hanging_Lake.jpg']]
     }
   },
   {
@@ -286,12 +314,44 @@ var geojson = [
       title: 'Kenosha Pass',
       'marker-color': '#3ca0d3',
       'marker-size': 'small',
+      'images': [['images/Kenosha_Pass.jpg']]
     }
   },
-];
+]
+}
 
-var mapGeo = L.mapbox.map('map_geo', 'mapbox.light')
-  .setView([39.00 ,-105.5], 7);
 
-var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(mapGeo);
-mapGeo.scrollWheelZoom.disable();
+// Add custom popup html to each marker.
+myLayer.on('layeradd', function(e) {
+    var marker = e.layer;
+    var feature = marker.feature;
+    var images = feature.properties.images
+    var slideshowContent = '';
+
+    for(var i = 0; i < images.length; i++) {
+        var img = images[i];
+
+        slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') + '">' +
+                              '<img src="' + img[0] + '" />' +
+                            '</div>';
+    }
+
+    // Create custom popup content
+    var popupContent =  '<div id="' + feature.properties.id + '" class="popup">' +
+                            '<h2>' + feature.properties.title + '</h2>' +
+                            '<div class="slideshow">' +
+                                slideshowContent +
+                            '</div>' +
+                        '</div>';
+
+    // http://leafletjs.com/reference.html#popup
+    marker.bindPopup(popupContent,{
+        closeButton: false,
+        minWidth: 250
+    });
+});
+
+// Add features to the map
+myLayer.setGeoJSON(geoJson);
+
+map.setView([40 ,-105.8], 8);
