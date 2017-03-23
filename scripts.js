@@ -354,4 +354,4 @@ myLayer.on('layeradd', function(e) {
 // Add features to the map
 myLayer.setGeoJSON(geoJson);
 
-map.setView([40 ,-105.8], 8);
+map.setView([40.3 ,-105.8], 8);
