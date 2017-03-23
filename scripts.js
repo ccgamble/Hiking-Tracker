@@ -320,8 +320,6 @@ var geoJson = {
 ]
 }
 
-
-// Add custom popup html to each marker.
 myLayer.on('layeradd', function(e) {
     var marker = e.layer;
     var feature = marker.feature;
@@ -336,7 +334,6 @@ myLayer.on('layeradd', function(e) {
                             '</div>';
     }
 
-    // Create custom popup content
     var popupContent =  '<div id="' + feature.properties.id + '" class="popup">' +
                             '<h2>' + feature.properties.title + '</h2>' +
                             '<div class="slideshow">' +
@@ -344,14 +341,12 @@ myLayer.on('layeradd', function(e) {
                             '</div>' +
                         '</div>';
 
-    // http://leafletjs.com/reference.html#popup
     marker.bindPopup(popupContent,{
         closeButton: false,
         minWidth: 250
     });
 });
 
-// Add features to the map
 myLayer.setGeoJSON(geoJson);
 
 map.setView([40.3 ,-105.8], 8);
