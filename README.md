@@ -11,8 +11,6 @@ Clone down this repository.
 
 To open Application: `open index.html`
 
-To visit Application: `localhost:3000`
-
 [Deployed Site](https://ccgamble.github.io/Hiking-Tracker/)
 
 ## Screenshots
