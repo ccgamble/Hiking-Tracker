@@ -2,7 +2,7 @@
 
 ### Description
 
-About a year ago I really got into hiking. Using MapBox, I created a map that has markers and photos for all of the hikes I have completed in Colorado in the last year. This application uses GeoJSON, JavaScript, HTML, and CSS.
+About a year ago I really got into hiking. Using Mapbox, I created a map that has markers and photos for all of the hikes I have completed in Colorado in the last year. This application uses GeoJSON, JavaScript, HTML, and CSS.
 
 
 ## Installation and Setup Instructions
